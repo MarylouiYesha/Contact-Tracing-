@@ -13,23 +13,27 @@ print("")
 
 user= int(input (" What do you want to do? (1-3)"))
 
-if user== 1:
-    print("Add an item")
-    print("")
+information= {}
 
-    name=input("Full Name: ")
-    age= int(input("Age: "))
-    add=input("Address: ")
-    phone= int(input("Phone Number: "))
+user_input = True
 
-    info={
-        "name_":{name},
-        "age-":{age},
-        "add_":{add},
-        "phone_":{phone}
-    }
-
-    print("Saved!")
+while user_input:
+    if user== 1:
+        print("Add an item")
+        print("")    
+        
+        name=input("Full Name: ")
+        age= int(input("Age: "))
+        add=input("Address: ")
+        phone= int(input("Phone Number: "))
+        
+        information = name
+        information = age
+        information = add
+        information = phone
+    
+    for name, age, add, phone in information.items():
+        print("\n Saved!")
 
 
 #Option 2
