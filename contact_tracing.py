@@ -9,40 +9,37 @@ print("2 -> Search")
 print("3 -> Exit (y/n)")
 print("")
 
-#Option 1
+
 
 user= int(input (" What do you want to do? (1-3)"))
 
 information= {}
 
-user_input = True
 
-while user_input:
-    if user== 1:
-        print("Add an item")
-        print("")    
+#Option 1
+
+if user== 1:
+    print("Add an item")
+    print("")    
         
+    for i in range(10):
         name=input("Full Name: ")
         age= int(input("Age: "))
         add=input("Address: ")
         phone= int(input("Phone Number: "))
         
-        information={
-            "name" : name,
-            "age" :age,
-            "add" : add,
-            "phone" : phone
+        information.update({name: age})
+        information.update({add: phone})
 
-        }
-        
-        print("Saved!")
-
+    print(information)
 
 #Option 2
+    if user==2:
+        print("Search")
+        print("")
+        
 
-if user==2:
-    print("Search")
-    print("")
+
 
         
 #Option 3
