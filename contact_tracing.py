@@ -27,13 +27,15 @@ while user_input:
         add=input("Address: ")
         phone= int(input("Phone Number: "))
         
-        information = name
-        information = age
-        information = add
-        information = phone
+        name = name
+        age= age
+        add = add
+        phone = phone
+
+        
     
-    for name, age, add, phone in information.items():
-        print("\n Saved!")
+    
+    print("Saved!")
 
 
 #Option 2
