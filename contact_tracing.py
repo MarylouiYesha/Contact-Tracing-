@@ -38,8 +38,11 @@ if user== 1:
 
 #Option 2
 if user==2:
-        print("Search")
-        print("")
+    print("Search")
+    
+    name2=input("What is your name? ")
+    if name2==information[name]:
+        print(information)
         
 
 
