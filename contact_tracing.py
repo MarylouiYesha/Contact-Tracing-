@@ -17,24 +17,27 @@ information= {}
 
 
 #Option 1
-
 if user== 1:
     print("Add an item")
     print("")    
         
-    for i in range(10):
-        name=input("Full Name: ")
-        age= int(input("Age: "))
-        add=input("Address: ")
-        phone= int(input("Phone Number: "))
+    name=input("Full Name: ")
+    age= int(input("Age: "))
+    add=input("Address: ")
+    phone= int(input("Phone Number: "))
         
-        information.update({name: age})
-        information.update({add: phone})
+    information[name]=name
+    information[age]=age
+    information[add]=add
+    information[phone]=phone    
 
-    print(information)
+    print("Saved!")
+    
+
+
 
 #Option 2
-    if user==2:
+if user==2:
         print("Search")
         print("")
         
